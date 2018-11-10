@@ -31,29 +31,24 @@ class Main():
                 fa+=1
             else:
                 fa+=1
-                continue
-        for i in range(4):    
-            p.dateElemList.pop(0)            
-        return p.dateElemList
+                continue          
+        return p.dateElemList[4:]
     
     def textCounter(self, p):
         """ Структурируем названия """
         for i in range(p.lenNameElemArray):
             p.nameElemList.append(p.nameElem[i].getText())
-        
-        for i in range(4):    
-            p.nameElemList.pop(0)
-        return p.nameElemList
+        return p.nameElemList[4:]
     
     def structure(self, p):
-        for i in p.nameElemList:
+        for i in p.nameElemList[4:]:
             p.lenListOfname.append(len(i))
         maxLen=max(p.lenListOfname)
         return maxLen
         
     def spases(self, maxLen, p):
         colspa=[]
-        for i in p.nameElemList:
+        for i in p.nameElemList[4:]:
             colspa.append((maxLen-len(i))*p.dot)
         
         return colspa
