@@ -75,6 +75,7 @@ g=Main()
 
 
 def RutreckerHot(g, f):
+    '''Это говно ещё улучшать и улучшать'''
     namEl=g.textCounter(f)
     datEl=g.dateCounter(f)
     maxLen=g.structure(f)
