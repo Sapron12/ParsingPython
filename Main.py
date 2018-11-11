@@ -38,8 +38,8 @@ class Main():
         h=1
         for i in namEl:
             if h<10:
-                print('',h,'.   ',i, ' ', colSpa[h-1], datEl[h-1])
+                print(' ',h,'. ',i, '...', colSpa[h-1], datEl[h-1], sep='')
                 h+=1
             else:
-                print(h,'.   ',i, ' ', colSpa[h-1], datEl[h-1])
+                print(h,'. ',i, '...', colSpa[h-1], datEl[h-1], sep='')
                 h+=1                

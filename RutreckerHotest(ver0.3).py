@@ -15,4 +15,6 @@ def RutreckerHot(g, f):
     colSpa=g.spases(maxLen, f)
     g.printAll(maxLen, namEl, datEl, colSpa)
 
+
+
 RutreckerHot(g, f)
